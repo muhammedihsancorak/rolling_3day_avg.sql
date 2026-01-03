@@ -7,6 +7,11 @@ Calculate the rolling 3-day average of total automation runs per day for March 1
 ## Data Observation
 The provided dataset only contains records from January 2021.
 There is no data available for March, so a direct calculation for March 15 is not possible.
+But if the correct dataset provided we can simply go to 2nd last line in the code and change;
+
+WHERE d1.run_date = '2021-01-15'
+to
+WHERE d1.run_date = '2021-03-15'
 
 ## Solution Approach
 To demonstrate the correct logic, the rolling 3-day average was calculated for
